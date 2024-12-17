@@ -292,6 +292,7 @@ summary {
   margin-top: 1rem;
   grid-column: 1;
   background-color: #1a1a1a;
+  overflow-y: auto;
 }
 .gridSquare2 {
   font-style: italic;
@@ -306,6 +307,7 @@ summary {
   margin-top: 1rem;
   grid-column: 2;
   background-color: #1a1a1a;
+  overflow-y: auto;
 }
 .gridSquare3 {
   font-style: italic;
@@ -322,6 +324,7 @@ summary {
   margin-top: 1rem;
   grid-column: 3;
   background-color: #1a1a1a;
+  overflow-y: auto;
 }
 
 .largeText {
@@ -348,10 +351,12 @@ summary {
 }
 
 .smallText {
-  margin-top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   font-style: italic;
   font-weight: 1000;
-  font-size: 100%;
+  font-size: auto;
+  overflow: auto;
 }
 
 .square1 {
