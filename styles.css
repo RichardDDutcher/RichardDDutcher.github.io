@@ -265,7 +265,7 @@ summary {
   width: 100vw;
   overflow: auto;
   height: 90rem;
-  
+  margin: 0,0,0,0;
   top: 0;
   margin-top: 0;
   background-color: #1a1a1a;
