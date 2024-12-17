@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="socials.html">Socials</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-    </div>
+<html lang="en">
+
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Homepage</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <h1>Start of this webpage is now</h1>
-        <p>This page is hosted with Github Pages</p>
+
+        <nav class="navbar">
+            <ul>
+                <div class="nav-indicator">
+                    <div class="box"></div>
+                </div>
+                <li class="nav-item">
+                    <a class=" nav-link active" href="#home">
+                        <span class="line-md--home-md iconify"></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#links.html">
+                        <span class="line-md--link iconify"></span>
+                        <span class="text">Links</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio.html">
+                        <span class="line-md--folder iconify"></span>
+                        <span class="text">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about.html">
+                        <span class="line-md--person iconify"></span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <script>
+
+            const nav_bar = document.querySelector('.navbar');
+            const nav_links = nav_bar.querySelectorAll('.nav-link');
+
+            nav_links.forEach((nav_link, index)=>{
+                nav_link.addEventListener('click', function() {
+                    nav_bar.querySelector('.nav-link.active').classList.remove('active')
+
+                    this.classList.add('active')
+
+                    nav_bar.querySelector('.nav-indicator').style.translate = `${index *100}% 0`;
+                })
+            })
+
+
+        </script>
+
+
     </body>
+
 </html>
