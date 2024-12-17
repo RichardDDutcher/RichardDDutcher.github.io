@@ -23,7 +23,7 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-  margin-top: -20rem;
+  margin-top: -90rem;
 	margin-left: 1rem; 
 	margin-right: auto;
 	background-color: #0c0c0c;
@@ -33,6 +33,8 @@ ul {
 	padding: .75rem;
 	border-radius: 10px;
 	box-shadow: 0 10px 50px 0 rgba(#1a1a1a, .25);
+  position: sticky;
+  top: 1rem;
 }
 
 li:nth-child(6) {
@@ -257,9 +259,17 @@ summary {
   mask-size: 100% 100%;
 }
 
-.square {
-  margin-top: -20rem;
-  height: 50rem;
-  width: 50rem;
-  background-color: #303030;
+
+.mainBlock {
+  width: 102%;
+  overflow: auto;
+  height: 90rem;
+  
+  top: 0;
+  background-color: #1a1a1a;
+}
+
+.gridSquares {
+  height: 2rem;
+  width: calc((75% / 3));
 }
