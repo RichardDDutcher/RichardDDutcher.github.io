@@ -15,6 +15,7 @@ body {
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 	background-color: #292929;
+  background:#292929;
 }
 
  
@@ -269,7 +270,108 @@ summary {
   background-color: #1a1a1a;
 }
 
-.gridSquares {
-  height: 2rem;
-  width: calc((75% / 3));
+.grid-container {
+  display: grid;
+  width: 98%;
+  column-gap: 2%;
+  grid-row: 1;
+
+}
+
+.gridSquare1 {
+  font-style: italic;
+  font-weight: 1000;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 1rem;
+  grid-column: 1;
+  background-color: #1a1a1a;
+}
+.gridSquare2 {
+  font-style: italic;
+  font-weight: 1000;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  align-content: center;
+  border-radius: 25px;
+  margin-top: 1rem;
+  grid-column: 2;
+  background-color: #1a1a1a;
+}
+.gridSquare3 {
+  font-style: italic;
+  font-weight: 1000;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  text-wrap: auto;
+  align-content: center;
+  margin: auto;
+  border-radius: 25px;
+  margin-top: 1rem;
+  grid-column: 3;
+  background-color: #1a1a1a;
+}
+
+.largeText {
+  font-size: 400%;
+  font-weight: 1500;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background: linear-gradient(to right, #fff, #474747);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+.plusText {
+  font-size: xxx-large;
+  font-weight: 1500;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: aquamarine
+
+}
+
+.smallText {
+  margin-top: 0;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: 100%;
+}
+
+.square1 {
+  width: 75%;
+  height: auto;
+  background-color: #474747;
+  text-align: center;
+  align-content: center;
+  margin-left: 15%;
+  margin-right: 25%;
+  border-radius: 10px;
+}
+
+.squareText {
+  font-style: italic;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 1000;
+  font-size: 150%;
+  user-select: none;
+  overflow-x: auto;
+  overflow-y: auto;
 }
