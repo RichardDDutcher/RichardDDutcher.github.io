@@ -10,31 +10,31 @@
 
     <body>
 
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <ul>
                 <div class="nav-indicator">
                     <div class="box"></div>
                 </div>
                 <li class="nav-item">
-                    <a class=" nav-link active" href="#home">
+                    <a class="nav-link active" href="#home">
                         <span class="line-md--home-md iconify"></span>
                         <span class="text">Home</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#links.html">
+                    <a class="nav-link" href="#links">
                         <span class="line-md--link iconify"></span>
                         <span class="text">Links</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio.html">
+                    <a class="nav-link" href="#portfolio">
                         <span class="line-md--folder iconify"></span>
                         <span class="text">Portfolio</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about.html">
+                    <a class="nav-link" href="#about">
                         <span class="line-md--person iconify"></span>
                         <span class="text">About</span>
                     </a>
@@ -50,7 +50,7 @@
             nav_links.forEach((nav_link, index)=>{
                 nav_link.addEventListener('click', function() {
                     nav_bar.querySelector('.nav-link.active').classList.remove('active')
-
+                    
                     this.classList.add('active')
 
                     nav_bar.querySelector('.nav-indicator').style.translate = `${index *100}% 0`;
@@ -58,7 +58,7 @@
             })
 
 
-        </script>
+        </script> -->
 
 
     </body>
