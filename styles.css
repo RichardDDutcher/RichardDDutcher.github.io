@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
 
-*, *:after, *:before {
-	box-sizing: border-box;
-}
+
 
 body {
 	font-family: "Inter", sans-serif;
@@ -39,14 +37,14 @@ ul {
   top: 1rem;
 }
 
-li:nth-child(6) {
-	margin-top: 5rem; 
-	padding-top: 1.25rem;
-	border-top: 1px solid #1f1f1f;
+li:nth-child(3) {
+	margin-top: 0rem; 
+	padding-top: 1rem;
+	border-top: 0px solid #1f1f1f;
 }
 
 li + li {
-	margin-top: .75rem;
+	margin-top: 1rem;
 }
 
 a {
@@ -265,25 +263,30 @@ summary {
 .mainBlock {
   width: 100vw;
   overflow-y: auto;
-  height: 100rem;
-  margin: 0,0,0,0;
-  text-align: center;
+  height: 180dvh;
+  margin-bottom: 0;
   background-color: #1a1a1a;
+}
+
+.mainBlock h1 {
+  margin-bottom: 0;
+  margin-left: 2rem;
+  top: 0;
+  position: absolute;
 }
 
 
 
 .textBlock {
   font-family: "Nunito", serif;
-  font-size: xx-large;
+  font-size: 200%;
   font-style: normal;
-  margin-left: 8rem;
-  margin-top: 70rem;
+  margin-top: 32dvh;
   overflow: scroll;
 }
 
 .textBlockName {
-  margin-top: 0rem;
+  margin-top: 38dvh;
   background: linear-gradient(to right, #ae8cbd, #a1a1a1);
   -webkit-text-fill-color: transparent;
   background-clip: text;
