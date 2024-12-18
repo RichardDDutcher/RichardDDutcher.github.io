@@ -305,6 +305,7 @@ summary {
 
 .textBlockName {
   font-size: 400%;
+  font-family: "Nunito", serif;
   margin-top: 29dvh;
   background: linear-gradient(to right, #ae8cbd, #a1a1a1);
   -webkit-text-fill-color: transparent;
