@@ -264,7 +264,7 @@ summary {
 
 .mainBlock {
   width: 100vw;
-  overflow: auto;
+  overflow-y: auto;
   height: 100rem;
   margin: 0,0,0,0;
   text-align: center;
