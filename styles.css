@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
 
+@media only screen and (max-width: 930px){
 
+  .mainBlock h1{
+    font-size: 200%;
+  }
+
+  .textBlock {
+    margin-top: 23dvh;
+  }
+
+  .textBlockName {
+    margin-top: 29dvh;
+  }
+ 
+}
+
+@media screen and (min-width: 931px) {
+  .textBlock {
+    margin-top: 23dvh;
+  }
+}
 
 body {
 	font-family: "Inter", sans-serif;
@@ -11,9 +31,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	background-color: #292929;
   background:#292929;
 }
 
@@ -263,7 +280,7 @@ summary {
 .mainBlock {
   width: 100vw;
   overflow-y: auto;
-  height: 180dvh;
+  height: 125dvh;
   margin-bottom: 0;
   background-color: #1a1a1a;
 }
@@ -279,14 +296,16 @@ summary {
 
 .textBlock {
   font-family: "Nunito", serif;
-  font-size: 200%;
+  font-size: 400%;
   font-style: normal;
-  margin-top: 32dvh;
+  margin-top: 23dvh;
   overflow: scroll;
 }
 
+
 .textBlockName {
-  margin-top: 38dvh;
+  font-size: 400%;
+  margin-top: 29dvh;
   background: linear-gradient(to right, #ae8cbd, #a1a1a1);
   -webkit-text-fill-color: transparent;
   background-clip: text;
