@@ -3,23 +3,35 @@
 
 @media only screen and (max-width: 930px){
 
+  .mainBlock {
+    height: 168dvh;
+  } 
+
   .mainBlock h1{
     font-size: 200%;
   }
 
   .textBlock {
-    margin-top: 23dvh;
+    margin-top: 29dvh;
   }
 
   .textBlockName {
-    margin-top: 29dvh;
+    margin-top: 33.5dvh;
   }
  
 }
 
 @media screen and (min-width: 931px) {
+  
+  .mainBlock {
+    height: 125dvh;
+  }
+
   .textBlock {
     margin-top: 23dvh;
+  }
+  .textBlockName{
+    margin-top: 29dvh;
   }
 }
 
@@ -280,7 +292,6 @@ summary {
 .mainBlock {
   width: 100vw;
   overflow-y: auto;
-  height: 125dvh;
   margin-bottom: 0;
   background-color: #1a1a1a;
 }
@@ -298,7 +309,6 @@ summary {
   font-family: "Nunito", serif;
   font-size: 400%;
   font-style: normal;
-  margin-top: 23dvh;
   overflow: scroll;
 }
 
@@ -306,7 +316,6 @@ summary {
 .textBlockName {
   font-size: 400%;
   font-family: "Nunito", serif;
-  margin-top: 29dvh;
   background: linear-gradient(to right, #ae8cbd, #a1a1a1);
   -webkit-text-fill-color: transparent;
   background-clip: text;
