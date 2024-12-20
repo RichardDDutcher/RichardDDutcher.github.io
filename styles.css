@@ -18,9 +18,13 @@
       margin-top: 267px;
     }
 
+    .grid-container {
+      top: calc(355px+15px);
+    }
+
   }
 
-  @media screen and (min-height: 1024px) {
+  @media screen and (min-height: 1025px) {
     .mainBlock {
       top: 0;
       position: fixed;
@@ -33,6 +37,10 @@
 
     .textBlockName {
       margin-top: 267px;
+    }
+
+    .grid-container {
+      top: calc(335px+15px);
     }
 
   }
@@ -61,9 +69,13 @@
       margin-top: 310px;
     }
 
+    .grid-container {
+      top: calc(426px+15px);
+    }
+
   }
 
-  @media screen and (min-height: 1024px) {
+  @media screen and (min-height: 1025px) {
     .mainBlock {
       top: 0;
       position: fixed;
@@ -76,6 +88,13 @@
     .textBlockName {
       margin-top: 310px;
     }
+
+    .grid-container {
+      position: absolute;
+      top: calc(445px + 15px);
+    }
+
+
 
   }
 
@@ -312,6 +331,7 @@ summary {
 /*Div Grid*/
 
 .grid-container {
+  position: absolute;
   display: grid;
   width: 98%;
   column-gap: 2%;
