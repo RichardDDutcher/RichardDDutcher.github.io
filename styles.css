@@ -19,7 +19,7 @@
     }
 
     .grid-container {
-      top: calc(355px+15px);
+      top: calc(335px + 15px);
     }
 
   }
@@ -40,7 +40,7 @@
     }
 
     .grid-container {
-      top: calc(335px+15px);
+      top: calc(335px + 15px);
     }
 
   }
@@ -70,7 +70,7 @@
     }
 
     .grid-container {
-      top: calc(426px+15px);
+      top: calc(426px + 15px);
     }
 
   }
@@ -300,6 +300,7 @@ summary {
 /*Main Box*/
 
 .mainBlock {
+  display: block;
   width: 100vw;
   overflow-y: auto;
   margin-bottom: 0;
