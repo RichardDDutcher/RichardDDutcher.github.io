@@ -4,35 +4,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>My Projects</title>
+        <title>Homepage</title>
         <link rel="stylesheet" href="styles.css">
+        <!--Favicon Links-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
     </head>
 
     <body>
 
-        <ul>    
+        <div class="mainBlock">
 
-            <li>
-                <a href="index.html">
-                    <i class="line-md--home-md"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="projects.html">
-                    <i class="line-md--folder"></i>
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="about.html">
-                    <i class="line-md--person"></i>
-                    <span>About Me</span>
-                </a>
-            </li>
+            <div class="container">
+                <input type="checkbox" id="toggle" checked/>
+                <label class="button" for="toggle">
+                  <nav class="nav">
+                    <ul>
+                      <li class="lowered"><a href="index.html"><i class="line-md--home-md"></i></a></li>
+                      <li><a href="projects.html"><i class="line-md--folder"></i></a></li>
+                      <li><a href="about.html"><i class="line-md--person"></i></a></li>
+                      <li><a href="https://github.com/RichardDDutcher"><i class="line-md--github"></i></a></li>
+                    </ul>
+                  </nav>
+                </label>
+            </div>
 
-        </ul>
-            
+        <div class="grid-container">
+
+            <div class="gridSquare1">
+                <p style="display: inline;">
+                    <span class="largeText">3</span>
+                    <span class="plusText">+</span>
+                    <br>
+                </p>
+                <p class="smallText">Yrs Python Experience</p>
+            </div>
+            <div class="gridSquare2">
+                <p style="display: inline;">
+                    <span class="largeText">1</span>
+                    <span class="plusText">+</span>
+                    <br>
+                </p>
+                <p class="smallText">Yrs C Based Languages</p>
+            </div>
+            <div class="gridSquare3">
+                <p style="display: inline;">
+                    <span class="largeText">5</span>
+                    <span class="plusText">+</span>
+                    <br>
+                </p>
+                <p class="smallText">Yrs Tech Experience</p>
+            </div>
+        </div>
+
     </body>
 
 </html>
