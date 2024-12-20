@@ -3,36 +3,82 @@
 
 @media only screen and (max-width: 930px){
 
-  .mainBlock {
-    height: 168dvh;
-  } 
+  @media screen and (max-height: 1024px) {
+    .mainBlock {
+      top: 0;
+      position: fixed;
+      height: 335px;
+    }
+
+    .textBlock {
+      margin-top: 231px;
+    }
+
+    .textBlockName {
+      margin-top: 267px;
+    }
+
+  }
+
+  @media screen and (min-height: 1024px) {
+    .mainBlock {
+      top: 0;
+      position: fixed;
+      height: 335px;
+    }
+
+    .textBlock {
+      margin-top: 231px;
+    }
+
+    .textBlockName {
+      margin-top: 267px;
+    }
+
+  }
 
   .mainBlock h1{
     font-size: 200%;
   }
 
-  .textBlock {
-    margin-top: 29dvh;
-  }
-
-  .textBlockName {
-    margin-top: 33.5dvh;
-  }
  
 }
 
 @media screen and (min-width: 931px) {
-  
-  .mainBlock {
-    height: 125dvh;
+
+  @media screen and (max-height: 1024px) {
+    .mainBlock {
+      top: 0;
+      position: fixed;
+      height: 426px;
+    }
+
+    .textBlock {
+        margin-top: 238px;
+    }
+
+    .textBlockName {
+      margin-top: 310px;
+    }
+
   }
 
-  .textBlock {
-    margin-top: 23dvh;
+  @media screen and (min-height: 1024px) {
+    .mainBlock {
+      top: 0;
+      position: fixed;
+      height: 445px;
+    }
+
+    .textBlock {
+      margin-top: 238px;
+    }
+    .textBlockName {
+      margin-top: 310px;
+    }
+
   }
-  .textBlockName{
-    margin-top: 29dvh;
-  }
+
 }
 
 body {
@@ -64,6 +110,7 @@ ul {
 	box-shadow: 0 10px 50px 0 rgba(#1a1a1a, .25);
   position: sticky;
   top: 1rem;
+  width: 50px;
 }
 
 li:nth-child(3) {
@@ -231,6 +278,133 @@ summary {
 	}
 }
 
+/*Main Box*/
+
+.mainBlock {
+  width: 100vw;
+  overflow-y: auto;
+  margin-bottom: 0;
+  background-color: #1a1a1a;
+}
+
+.mainBlock h1 {
+  margin-bottom: 0;
+  margin-left: 2rem;
+  top: 0;
+  position: absolute;
+}
+
+.textBlock {
+  font-family: "Nunito", serif;
+  font-size: 400%;
+  font-style: normal;
+  overflow: auto;
+}
+
+.textBlockName {
+  font-size: 400%;
+  font-family: "Nunito", serif;
+  background: linear-gradient(to right, #ae8cbd, #a1a1a1);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*Div Grid*/
+
+.grid-container {
+  display: grid;
+  width: 98%;
+  column-gap: 2%;
+}
+
+.gridSquare1 {
+  font-family: "Nunito", serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 15px;
+  grid-column: 1;
+  background-color: #1a1a1a;
+  overflow-y: auto;
+}
+.gridSquare2 {
+  font-family: "Nunito", serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  align-content: center;
+  border-radius: 25px;
+  margin-top: 15px;
+  grid-column: 2;
+  background-color: #1a1a1a;
+  overflow-y: auto;
+}
+.gridSquare3 {
+  font-family: "Nunito", serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 100%;
+  height: 10rem;
+  width: 100%;
+  color:#a7a7a7;
+  text-align: center;
+  text-wrap: auto;
+  align-content: center;
+  margin: auto;
+  border-radius: 25px;
+  margin-top: 15px;
+  grid-column: 3;
+  background-color: #1a1a1a;
+  overflow-y: auto;
+}
+
+.largeText {
+  font-family: "Nunito", serif;
+  font-size: 400%;
+  font-weight: 1500;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  background: linear-gradient(#fff, #474747);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+
+.plusText {
+  font-family: "Nunito", serif;
+  font-size: 400%;
+  font-weight: 1500;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ae8cbd
+  
+}
+
+.smallText {
+  font-family: "Nunito", serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: auto;
+  overflow: auto;
+}
+
+/*Icons Used in Navbar*/
 
 .line-md--home-md {
   display: inline-block;
@@ -287,130 +461,3 @@ summary {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
-
-
-.mainBlock {
-  width: 100vw;
-  overflow-y: auto;
-  margin-bottom: 0;
-  background-color: #1a1a1a;
-}
-
-.mainBlock h1 {
-  margin-bottom: 0;
-  margin-left: 2rem;
-  top: 0;
-  position: absolute;
-}
-
-
-
-.textBlock {
-  font-family: "Nunito", serif;
-  font-size: 400%;
-  font-style: normal;
-  overflow: auto;
-}
-
-
-.textBlockName {
-  font-size: 400%;
-  font-family: "Nunito", serif;
-  background: linear-gradient(to right, #ae8cbd, #a1a1a1);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.grid-container {
-  display: grid;
-  width: 98%;
-  column-gap: 2%;
-}
-
-.gridSquare1 {
-  font-family: "Nunito", serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 100%;
-  height: 10rem;
-  width: 100%;
-  color:#a7a7a7;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  border-radius: 25px;
-  margin-top: 1rem;
-  grid-column: 1;
-  background-color: #1a1a1a;
-  overflow-y: auto;
-}
-.gridSquare2 {
-  font-family: "Nunito", serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 100%;
-  height: 10rem;
-  width: 100%;
-  color:#a7a7a7;
-  text-align: center;
-  align-content: center;
-  border-radius: 25px;
-  margin-top: 1rem;
-  grid-column: 2;
-  background-color: #1a1a1a;
-  overflow-y: auto;
-}
-.gridSquare3 {
-  font-family: "Nunito", serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 100%;
-  height: 10rem;
-  width: 100%;
-  color:#a7a7a7;
-  text-align: center;
-  text-wrap: auto;
-  align-content: center;
-  margin: auto;
-  border-radius: 25px;
-  margin-top: 1rem;
-  grid-column: 3;
-  background-color: #1a1a1a;
-  overflow-y: auto;
-}
-
-.largeText {
-  font-family: "Nunito", serif;
-  font-size: 400%;
-  font-weight: 1500;
-  font-style: normal;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  background: linear-gradient(#fff, #474747);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-}
-
-.plusText {
-  font-family: "Nunito", serif;
-  font-size: 400%;
-  font-weight: 1500;
-  font-style: normal;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #ae8cbd
-
-}
-
-.smallText {
-  font-family: "Nunito", serif;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-style: italic;
-  font-weight: 1000;
-  font-size: auto;
-  overflow: auto;
-}
-
